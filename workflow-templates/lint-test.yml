@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses synthesized-io/actions/lint
+    - uses synthesized-io/actions/lint@master
       with:
         python-version: 3.7
 
@@ -32,7 +32,7 @@ jobs:
 
     name: Unit test (${{ matrix.index }}/${{ matrix.total }})
     steps:
-      - uses: synthesized-io/actions/pytest
+      - uses: synthesized-io/actions/pytest@master
         with:
           python-version: 3.7
           src: '.'
