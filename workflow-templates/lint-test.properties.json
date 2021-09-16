@@ -3,9 +3,9 @@
     "description": "Template for linting and testing python Workflows",
     "iconName": "synthesized-icon",
     "categories": [
-        "python"
+        "Python"
     ],
     "filePatterns": [
-        "&.pre-commit-config.yaml",
+        ".pre-commit-config.yaml",
     ]
 }
