@@ -1,11 +1,5 @@
 {
     "name": "Synthesized Python Lint Test Workflow",
     "description": "Template for linting and testing python Workflows",
-    "iconName": "synthesized-icon",
-    "categories": [
-        "Python"
-    ],
-    "filePatterns": [
-        ".pre-commit-config.yaml",
-    ]
+    "iconName": "synthesized-icon"
 }
