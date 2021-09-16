@@ -1,0 +1,94 @@
+---
+name: lint-test
+
+on:
+  push:
+    branches: [ $default-branch ]
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses synthesized-io/actions/lint
+      with:
+        python-version: 3.7
+
+  test:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+
+    strategy:
+      fail-fast: false
+      matrix:
+        index: [0, 1, 2, 3, 4, 5, 6, 7]
+        total: [8]
+
+    name: Unit test (${{ matrix.index }}/${{ matrix.total }})
+    steps:
+      - uses: synthesized-io/actions/pytest
+        with:
+          python-version: 3.7
+          src: '.'
+          extras: '[test,colab]'
+          index: ${{ matrix.index }}
+          total: ${{ matrix.total }}
+
+  post:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2.3.4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+
+      - name: Download test-results
+        uses: actions/download-artifact@v2
+        with:
+          name: test-results
+          path: test-results
+
+      - name: Junit Report to Annotations
+        uses: ashley-taylor/junit-report-annotations-action@master
+        with:
+          access-token: ${{ secrets.GITHUB_TOKEN }}
+          path: test-results/*.xml
+          numFailures: 10
+
+      - name: Download coverage
+        if: ${{ always() }}
+        uses: actions/download-artifact@v2
+        with:
+          name: coverage
+          path: coverage
+
+      - name: Analyze with SonarCloud
+        if: ${{ always() }}
+        uses: sonarsource/sonarcloud-github-action@master
+        with:
+          projectBaseDir: .
+          args: >
+            -Dsonar.organization=synthesized-io
+            -Dsonar.projectKey=synthesized-io_synthesized
+            -Dsonar.projectName=synthesized
+            -Dsonar.sourceEncoding=UTF-8
+            -Dsonar.python.xunit.reportPath=test-results/*.xml
+            -Dsonar.python.coverage.reportPaths=coverage/*.xml
+            -Dsonar.sources=synthesized/
+            -Dsonar.tests=tests/
+            -Dsonar.coverage.exclusions=tests/parallelize.py
+            -Dsonar.pullrequest.provider=github
+            -Dsonar.pullrequest.github.repository=synthesized-io/synthesized
+            -Dsonar.pullrequest.github.endpoint=https://api.github.com
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+...
