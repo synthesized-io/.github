@@ -1,5 +1,8 @@
 {
     "name": "Synthesized Python Lint Test Workflow",
     "description": "Template for linting and testing python Workflows",
-    "iconName": "synthesized-icon"
+    "iconName": "synthesized-icon",
+    "categories": [
+        "Python"
+    ]
 }
