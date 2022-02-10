@@ -4,4 +4,4 @@
 
 ### :steam_locomotive:[testing-suite-engine](https://github.com/synthesized-io/testing-suite-engine) - :postbox:[testing-suite-api](https://github.com/synthesized-io/testing-suite-api) - :eyes:[testing-suite-ui-front](https://github.com/synthesized-io/testing-suite-ui-front) - :file_cabinet:[testing-suite-commons](https://github.com/synthesized-io/testing-suite-commons)
 
-### :alembic:[synthesized-sdk](https://github.com/synthesized-io/synthesized-sdk) - :telescope:[insight](https://github.com/synthesized-io/insight) - :balance_scale:[fairlens](https://github.com/synthesized-io/fairlens)
+### :alembic:[sdk](https://github.com/synthesized-io/synthesized-sdk) - :telescope:[insight](https://github.com/synthesized-io/insight) - :balance_scale:[fairlens](https://github.com/synthesized-io/fairlens)
