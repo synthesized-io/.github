@@ -1,7 +1,7 @@
-### :open_book:[Synthesized's Wiki](https://github.com/synthesized-io/home/wiki) :: :rocket:[Story Board](https://github.com/orgs/synthesized-io/projects/13) :: :octocat:[Customer Board](https://github.com/orgs/synthesized-io/projects/12)
+## :book:[Synthesized's Wiki](https://github.com/synthesized-io/home/wiki) - :rocket:[projects/stories](https://github.com/orgs/synthesized-io/projects/13) - :octocat:[projects/customer-support](https://github.com/orgs/synthesized-io/projects/12) - :eye_speech_bubble:[Discussions](https://github.com/synthesized-io/home/discussions)
 
-#### :file_cabinet:[synthesized-io/home](https://github.com/synthesized-io/home) :: :file_cabinet:[synthesized-io/support](https://github.com/synthesized-io/support)
+### :house_with_garden:[synthesized-io/home](https://github.com/synthesized-io/home) - :toolbox:[synthesized-io/support](https://github.com/synthesized-io/support)
 
-##### :file_cabinet:[testing-suite-engine](https://github.com/synthesized-io/testing-suite-engine) :: :file_cabinet:[testing-suite-api](https://github.com/synthesized-io/testing-suite-api) :: :file_cabinet:[testing-suite-ui-front](https://github.com/synthesized-io/testing-suite-ui-front) :: :file_cabinet:[testing-suite-commons](https://github.com/synthesized-io/testing-suite-commons)
+### :steam_locomotive:[testing-suite-engine](https://github.com/synthesized-io/testing-suite-engine) - :postbox:[testing-suite-api](https://github.com/synthesized-io/testing-suite-api) - :eyes:[testing-suite-ui-front](https://github.com/synthesized-io/testing-suite-ui-front) - :file_cabinet:[testing-suite-commons](https://github.com/synthesized-io/testing-suite-commons)
 
-##### :file_cabinet:[synthesized-sdk](https://github.com/synthesized-io/synthesized-sdk) :: :file_cabinet:[insight](https://github.com/synthesized-io/insight) :: :file_cabinet:[fairlens](https://github.com/synthesized-io/fairlens)
+### :alembic:[synthesized-sdk](https://github.com/synthesized-io/synthesized-sdk) - :telescope:[insight](https://github.com/synthesized-io/insight) - :balance_scale:[fairlens](https://github.com/synthesized-io/fairlens)
