@@ -4,6 +4,6 @@
 
 ### :house_with_garden:[synthesized-io/home](https://github.com/synthesized-io/home) - :toolbox:[synthesized-io/support](https://github.com/synthesized-io/support)
 
-### :steam_locomotive:[testing-suite-engine](https://github.com/synthesized-io/testing-suite-engine) - :banana:[testing-suite-ui](https://github.com/synthesized-io/testing-suite-ui) - :file_cabinet:[testing-suite-commons](https://github.com/synthesized-io/testing-suite-commons) 
+### :steam_locomotive:[testing-suite-engine](https://github.com/synthesized-io/testing-suite-engine) - :banana:[testing-suite-ui](https://github.com/synthesized-io/testing-suite-ui) - :file_cabinet:[testing-suite-commons](https://github.com/synthesized-io/testing-suite-commons) - 👀[status](https://github.com/synthesized-io/status)
 
 ### :alembic:[sdk](https://github.com/synthesized-io/synthesized-sdk) - :telescope:[insight](https://github.com/synthesized-io/insight) - :balance_scale:[fairlens](https://github.com/synthesized-io/fairlens)
