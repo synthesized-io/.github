@@ -1,0 +1,51 @@
+name: Story / Feature
+description: Create a new story / feature request
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Need
+      description: Describe the problem (or opportunity) you're trying to solve. Why is it important to our users and our business?
+      placeholder: Story text goes here
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        - What should be done to satisfy the need?
+        - Put enough detail that would allow the story to be estimated.
+        - If after estimation the deadline can't be met, try to reduce the scope; if that's not possible, escalate.
+      placeholder: |
+        1. < criterion #1 >
+        1. < criterion #2 >
+        1. ...
+    validations:
+      required: true
+
+  - id: ticket-url
+    type: input
+    attributes:
+      label: Ticket URL
+      description: If there is a non-GitHub ticket (_e.g._, a Jira ticket in the product backlog), please provide the URL here.
+      placeholder: https://your-team.atlassian.net/browse/ABC-123
+
+  - type: textarea
+    id: details
+    attributes:
+      label: "Implementation details"
+      description: |
+        In this optional section, you can include:
+        - A concrete implementation plan (subtasks, related issues, etc.)
+        - Links to supplementary documents like a PRD or designs
+      placeholder: |
+        ```[tasklist]
+          ### Story sub-tasks
+          - [ ] https://github.com/your-org/your-repo/issues/45
+          - [ ] Draft task
+        ```
+        **PRD:** https://...
+        **Designs:** https://...
+      value: None

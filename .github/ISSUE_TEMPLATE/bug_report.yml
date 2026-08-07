@@ -1,0 +1,61 @@
+name: Bug report
+description: Report a bug
+labels: ["bug"]
+body:
+  - id: environment
+    type: input
+    attributes:
+      label: Environment
+      description: Where was the software used?
+      placeholder: GCP, AWS, On-Prem, local, etc.
+    validations:
+      required: true
+
+  - id: version
+    type: input
+    attributes:
+      label: Version
+      description: What version of the product was used?
+      placeholder: 1.23.45
+    validations:
+      required: true
+
+  - id: ticket-url
+    type: input
+    attributes:
+      label: Ticket URL
+      description: If this bug is related to a non-GitHub ticket (_e.g._, a customer request in Jira), please provide the URL here.
+      placeholder: https://your-team.atlassian.net/browse/ABC-123
+
+  - id: prerequisites
+    type: textarea
+    attributes:
+      label: "Prerequisites"
+      description: |
+        Any particular preconditions that must be met to reproduce the issue:
+        environment specifics, OS settings, particular hardware, preparatory actions, etc.
+      value: None
+
+  - id: steps-to-reproduce
+    type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step description of what to do to reproduce the bug.
+      value: |
+        1. _Do this_
+        1. _Do that_
+        1. ...
+
+        #### Expected results
+        _What the behaviour should have been according to specs, previous agreements, common sense_
+
+        #### Actual results
+        _What you observed in reality_
+
+  - id: additional-details
+    type: textarea
+    attributes:
+      label: "Additional details"
+      description: |
+        Anything useful you have to say about the issue that isn't covered above - logs, config snippets, screenshots, etc.
+      value: None
