@@ -14,4 +14,4 @@
 
 - [ ] Tests pass locally
 - [ ] Documentation updated if needed
-- [ ] PR title follows one of the accepted formats (transition period - see `CONTRIBUTING.md`): `[#123] short description`, or [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with the Linear ticket ID (e.g. `feat(ui): CLOUD-150 Add Button component`)
+- [ ] PR title follows an accepted format (see `CONTRIBUTING.md`): `[TICKET-123] short description`, or [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) (e.g. `feat(ui): Add Button component`)

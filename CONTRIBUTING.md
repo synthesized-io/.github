@@ -37,14 +37,16 @@ Please follow our branch naming rules:
 ❌ `feat/login` (invalid prefix)
 ❌ `bugfix/error` (invalid prefix)
 
-## PR titles (transition period)
+## PR titles
 
-Two formats are currently accepted while the org converges on one - see the PR-title-lint workflow:
+Two formats are accepted. Where the PR-title-lint workflow is installed, it checks them.
 
-- The existing format: `[#<issue-number>] <short description>` - e.g. `[#123] Fix flaky test`
-- The target format: [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) with a Linear ticket ID immediately after the `type(scope):` prefix - e.g. `feat(ui): CLOUD-150 Add Button component`
+- Ticket first: `[TICKET-123] <short description>` - e.g. `[CLOUD-150] Fix flaky test`. The case of the ticket key does not matter.
+- [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/): `<type>(<scope>): <short description>` - e.g. `feat(ui): Add Button component`. The scope is optional, and a ticket ID is not required in this form.
 
-Once the org picks one, this section (and the lint workflow) should drop the other.
+Two spellings are rejected. `[#123] <short description>` is the GitHub issue number used before Linear. `[#CLOUD-150] <short description>`, with a `#` before the ticket key, is a leftover from that format: write `[CLOUD-150]` instead.
+
+PRs opened by a bot are exempt from the check.
 
 ## Guidelines
 
